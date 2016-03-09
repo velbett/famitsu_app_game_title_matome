@@ -1,12 +1,12 @@
 .ad-rect { margin-bottom: 16px; }
 
-.ad-jack { position: absolute; top: 0; width: 305px; height: 800px; z-index: 9998; }
+.ad-jack { position: absolute; top: 0; width: 305px; height: 800px; z-index: 9998; display: none; }
 
 #ad-jack-right { right: -321px; }
 
 #ad-jack-left { left: -321px; }
 
-#ad-center-big { width: 1000px; height: 150px; margin: 0 auto 16px; }
+#ad-center-big { width: 1000px; height: 150px; margin: 0 auto 16px; display: none; }
 
 #ad-super-banner { width: 728px; height: 90px; margin: 10px auto 16px; }
 

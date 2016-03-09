@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @media only screen and (max-width: 768px) { .game-tips-layout #main-content-wrap, .game-tips-layout #layout-1, .game-tips-layout #layout-2, .game-tips-layout #layout-3 { float: none; width: 100%; }
   .container, #main-content-wrap, #layout-1, #layout-2, #layout-3 { float: none; width: 100%; }
+  #header { margin: 165px 0 0 0; }
+  #common-header { background: rgba(255, 255, 255, 0.5); }
   #content-header.front-page { height: 80px; }
   #content-header.front-page .game-icon { width: 40px; height: 40px; left: 10px; bottom: 20px; -webkit-border-radius: 3px; border-radius: 3px; }
   #content-header.front-page .game-title { left: 60px; bottom: 30px; padding: 0; font-size: 15px; }
@@ -31,11 +33,17 @@
   .side-menu-list > ul li:last-child { border-bottom: none; }
   .side-menu-list > ul li > ul { padding: 0; }
   /*---------------------------------------------- メニューへ --------------------------------------------*/
-  #menu-slide { display: none; position: fixed; bottom: 20px; left: 0; background-color: rgba(0, 0, 0, 0.45); color: #CCC; width: 44px; height: 44px; line-height: 44px; text-align: center; font-weight: bold; cursor: pointer; z-index: 9999; -webkit-border-radius: 0 3px 3px 0; border-radius: 0 3px 3px 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  #menu-slide { display: none; position: fixed; bottom: 95px; left: 0; background-color: rgba(0, 0, 0, 0.45); color: #CCC; width: 44px; height: 44px; line-height: 44px; text-align: center; font-weight: bold; cursor: pointer; z-index: 9999; -webkit-border-radius: 0 3px 3px 0; border-radius: 0 3px 3px 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
   #menu-slide span { border-top: 3px solid #CCC; }
   #menu-slide .fa { position: relative; top: 8px; font-size: 24px; }
   /*---------------------------------------------- ページTOPへ戻る --------------------------------------------*/
-  #page-top-back { right: 0; width: 44px; height: 44px; line-height: 44px; -webkit-border-radius: 3px 0 0 3px; border-radius: 3px 0 0 3px; }
+  #page-top-back { right: 0; bottom: 95px; width: 44px; height: 44px; line-height: 44px; -webkit-border-radius: 3px 0 0 3px; border-radius: 3px 0 0 3px; }
   #page-top-back .fa { top: 7px; font-size: 24px; }
   .sp-hide { display: none !important; }
-  .sp-show { display: block !important; } }
+  .sp-show { display: block !important; }
+  /*---------------------------------------------- スマホの広告 --------------------------------------------*/
+  .sp-ad-jack { position: fixed; z-index: 9999; width: 100%; }
+  .sp-ad-jack.top { top: 0; }
+  .sp-ad-jack.top img { max-width: 100%; height: auto; }
+  .sp-ad-jack.bottom { bottom: 0; }
+  .sp-ad-jack.bottom img { max-width: 100%; height: auto; } }

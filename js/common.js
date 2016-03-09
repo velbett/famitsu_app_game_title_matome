@@ -10,10 +10,18 @@ ua.isiOS		 = (ua.isiPhone || ua.isiPod || ua.isiPad);
 ua.isTablet	= (ua.isiPad || (ua.isAndroid && ua.name.indexOf('mobile') < 0));
 
 
-
 $(document).ready( function(){
+
+	//ページ上部へ戻るボタン表示
 	$('body').append('<div id="page-top-back" class="js-page-top"><span><i class="fa fa-arrow-up"></i></span></div>');
+
+	//スマホだけ、ページ下部に、攻略メニューへページ内ジャンプするためのメニューボタンを表示
 	$('body').append('<div id="menu-slide" class="js-menu-slide"><span><i class="fa fa-bars"></i></span></div>');
+
+	//スマホだけ、ページ上部と下部にジャック広告表示 （スマホのジャック広告が入った場合は、上の2つのposition位置を変更したい）
+	$('body').append('<aside><div class="sp-ad-jack top"></div></aside>');
+	$('body').append('<aside class="pc-hide sp-show"><div class="sp-ad-jack bottom"><img src="./img/jackA-btm.png" alt="" /></div></aside>');
+
 });
 
 $(function(){
@@ -82,9 +90,6 @@ $(function(){
 
 
 });
-
-
-
 
 function slideObj(a,b,speed,offset) {
 		var p = $(a).eq(b).offset().top;

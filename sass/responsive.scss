@@ -24,6 +24,14 @@
 		width: 100%;
 	}
 
+	#header {
+		margin: 165px 0 0 0;
+	}
+
+	#common-header {
+		background: rgba(255,255,255,.5);
+	}
+
 	#content-header.front-page {
 		height: 80px;
 		.game-icon {
@@ -162,7 +170,7 @@
 	#menu-slide {
 			display: none;
 			position: fixed;
-			bottom: 20px;
+			bottom: 95px;
 			left: 0;
 			background-color: rgba(0, 0, 0, 0.45);
 			color: #CCC;
@@ -190,6 +198,7 @@
 	 *--------------------------------------------*/
 	#page-top-back {
 			right: 0;
+			bottom: 95px;
 			width: 44px;
 			height: 44px;
 			line-height: 44px;
@@ -199,12 +208,34 @@
 				font-size: 24px;
 			}
 	}
-
 	.sp-hide {
 		display: none !important;
 	}
 
 	.sp-show {
 		display: block !important;
+	}
+
+	/*----------------------------------------------
+	 * スマホの広告
+	 *--------------------------------------------*/
+	.sp-ad-jack {
+		position: fixed;
+		z-index: 9999;
+		width: 100%;
+		&.top {
+			top: 0;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		&.bottom {
+			bottom: 0;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
 	}
 }
