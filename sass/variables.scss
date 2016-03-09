@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+// box-sizing
+$box-sizing_defaultVal: border-box;
+// border-radius
+$border-radius_allVal: 3px;
+$border-radius_topVal: 3px 3px 0 0;
+$border-radius_rightVal: 0 3px 3px 0;
+$border-radius_bottomVal: 0 0 3px 3px;
+$border-radius_leftVal: 3px 0 0 3px;
+$border-radius_none: 0;
+
+// img directory
+$imgDir: "/img/";

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@media only screen and (max-width: 768px) { .game-tips-layout #main-content-wrap, .game-tips-layout #layout-1, .game-tips-layout #layout-2, .game-tips-layout #layout-3 { float: none; width: 100%; }
+  .container, #main-content-wrap, #layout-1, #layout-2, #layout-3 { float: none; width: 100%; }
+  #content-header.front-page { height: 80px; }
+  #content-header.front-page .game-icon { width: 40px; height: 40px; left: 10px; bottom: 20px; -webkit-border-radius: 3px; border-radius: 3px; }
+  #content-header.front-page .game-title { left: 60px; bottom: 30px; padding: 0; font-size: 15px; }
+  #content-main-nav .nav { margin: 0; }
+  #content-main-nav .nav li { width: 33.3333%; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; }
+  #content-main-nav .nav a { font-size: 11px; height: 32px; line-height: 32px; }
+  #content-main-nav .nav a:hover { -webkit-transition: all 0 linear; transition: all 0 linear; }
+  #content-main-nav .nav .current a { border-bottom-width: 3px; }
+  #content-main-nav.sp-trans { overflow: hidden; }
+  #content-main-nav.sp-trans .inner { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  #content-main-nav.sp-trans .inner::-webkit-scrollbar { /* スクロールバー本体 */ width: 0; background: transparent; }
+  #content-main-nav.sp-trans .inner::-webkit-scrollbar:horizontal { /* 横方向のスクロールバー本体 */ width: 0; background: transparent; }
+  #content-main-nav.sp-trans .inner::-webkit-scrollbar-thumb, #content-main-nav.sp-trans .inner::-webkit-scrollbar-thumb:horizontal, #content-main-nav.sp-trans .inner::-webkit-scrollbar-track-piece:start, #content-main-nav.sp-trans .inner::-webkit-scrollbar-track-piece:end, #content-main-nav.sp-trans .inner::-webkit-scrollbar-corner { /* スクロールバー角 */ background: transparent; }
+  #content-main-nav.sp-trans .inner .nav { display: table; }
+  #content-main-nav.sp-trans .inner .nav li { float: none; display: table-cell; min-width: 100px; }
+  #content-main-nav.sp-trans .inner .nav li a { height: 44px; line-height: 44px; }
+  #content-main-nav.sp-trans .game-icon { position: relative; bottom: 3px; display: inline-block; width: 24px; height: 24px; margin: 0 5px 0 0; vertical-align: middle; }
+  #footer { padding: 20px 0 120px; }
+  #site-relation-link-list { padding: 0 10px; }
+  #footer-game-title dt { padding: 0 10px; }
+  #footer-game-title li { float: none; width: auto; border-bottom: 1px solid #E5E5E5; }
+  #footer-game-title li:first-child { border-top: 1px solid #E5E5E5; }
+  #footer-game-title li a { padding: 5px 10px; }
+  #footer-game-title .game-icon { width: 32px; height: 32px; }
+  #footer-game-title .game-title { margin: 8px 0 0 0; }
+  .side-menu-list > ul li { border-bottom: 1px solid #E5E5E5; }
+  .side-menu-list > ul li:first-child { border-top: 1px solid #E5E5E5; }
+  .side-menu-list > ul li:last-child { border-bottom: none; }
+  .side-menu-list > ul li > ul { padding: 0; }
+  /*---------------------------------------------- メニューへ --------------------------------------------*/
+  #menu-slide { display: none; position: fixed; bottom: 20px; left: 0; background-color: rgba(0, 0, 0, 0.45); color: #CCC; width: 44px; height: 44px; line-height: 44px; text-align: center; font-weight: bold; cursor: pointer; z-index: 9999; -webkit-border-radius: 0 3px 3px 0; border-radius: 0 3px 3px 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  #menu-slide span { border-top: 3px solid #CCC; }
+  #menu-slide .fa { position: relative; top: 8px; font-size: 24px; }
+  /*---------------------------------------------- ページTOPへ戻る --------------------------------------------*/
+  #page-top-back { right: 0; width: 44px; height: 44px; line-height: 44px; -webkit-border-radius: 3px 0 0 3px; border-radius: 3px 0 0 3px; }
+  #page-top-back .fa { top: 7px; font-size: 24px; }
+  .sp-hide { display: none !important; }
+  .sp-show { display: block !important; } }

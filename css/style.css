@@ -1,0 +1,360 @@
+@charset "UTF-8";
+html { overflow-y: scroll; height: 100%; -webkit-text-size-adjust: 100%; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; outline: 0; font-size: 100%; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; word-break: break-all; }
+
+p { word-break: break-all; }
+
+abbr, acronym, fieldset { border: 0; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+nav ul { list-style: none; }
+
+li { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+a { color: #0055AD; text-decoration: none; -webkit-transition: all 0.02s linear; transition: all 0.02s linear; }
+
+a:visited { color: #0055AD; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+a:active { color: #0055AD; }
+
+img { vertical-align: bottom; }
+
+input, select { vertical-align: middle; margin: 0; padding: 0; }
+
+label, select, input[type="file"], input[type="submit"], input[type="button"], input[type="checkbox"], input[type="radio"] { cursor: pointer; }
+
+button, input[type="submit"] { outline: none; }
+
+textarea, input[type="password"], input[type="text"], input[type="search"] { -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; }
+
+body { color: #333; font-family: 'Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif; background-color: #F2F2F2; font-size: 12px; line-height: 18px; }
+
+.ad-rect { margin-bottom: 16px; }
+
+.ad-jack { position: absolute; top: 0; width: 305px; height: 800px; z-index: 9998; }
+
+#ad-jack-right { right: -321px; }
+
+#ad-jack-left { left: -321px; }
+
+#ad-center-big { width: 1000px; height: 150px; margin: 0 auto 16px; }
+
+#ad-super-banner { width: 728px; height: 90px; margin: 10px auto 16px; }
+
+.ad-banner { margin-bottom: 16px; }
+.ad-banner img { max-width: 100%; height: auto; }
+
+.ad-grand { margin-bottom: 10px; display: none; }
+.ad-grand img { max-width: 100%; height: auto; }
+
+#container, #header, #content, #footer { width: 100%; }
+
+.container { margin: 0 auto; width: 1024px; }
+
+#header { background-color: #F8F8F8; }
+
+#content { position: relative; }
+
+footer { border-top: 1px solid #E5E5E5; background-color: #FFF; }
+
+#footer { padding: 40px 20px; }
+
+#common-header { position: relative; background-color: #FFF; height: 40px; line-height: 40px; border-bottom: 1px solid #E5E5E5; }
+
+#header-menu-btn { position: relative; float: left; margin: 8px 10px 0 10px; width: 24px; height: 24px; text-align: center; border: none; padding: 0; background-color: transparent; z-index: 10; }
+#header-menu-btn .fa { font-size: 24px; color: #333; }
+#header-menu-btn .parts-name { position: absolute; height: 0; overflow: hidden; }
+
+#header-menu { float: left; }
+#header-menu li { float: left; }
+#header-menu a { display: block; color: #333; padding: 0 10px; }
+#header-menu a:hover { text-decoration: none; }
+
+#content-header { position: relative; background-color: #1b1b1b; height: 80px; }
+#content-header:before { content: " "; position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(to bottom, transparent 20%, rgba(0, 0, 0, 0.8) 100%); z-index: 1; }
+#content-header .game-title { position: absolute; bottom: 20px; left: 72px; color: #FFF; font-size: 24px; padding: 10px; text-align: left; font-weight: bold; -webkit-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6); text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6); }
+#content-header .game-icon { position: absolute; bottom: 4px; left: 0; width: 72px; height: 72px; -webkit-box-shadow: 0 0 16px rgba(255, 255, 255, 0.75); box-shadow: 0 0 16px rgba(255, 255, 255, 0.75); -webkit-border-radius: 20px; border-radius: 20px; -webkit-background-size: cover; background-size: cover; }
+#content-header.front-page { height: 248px; }
+#content-header.front-page .game-title { bottom: 20px; left: 134px; font-size: 24px; }
+#content-header.front-page .game-icon { width: 124px; height: 124px; bottom: -32px; }
+
+#content-body { position: relative; }
+
+#content-header-inner { position: relative; height: 100%; z-index: 1; }
+
+#content-main-sign-board img { max-width: 100%; max-height: 100%; }
+
+#content-header-cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; -webkit--webkit-filter: blur(10px); -webkit-filter: blur(10px); background-repeat: no-repeat; -webkit-background-position: 50% 20%; background-position: 50% 20%; -webkit-background-size: cover; background-size: cover; }
+#content-header-cover.noBlur { -webkit-filter: blur(0); }
+
+#content-main-nav { background-color: #FEFEFE; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); }
+#content-main-nav .container { background-color: #FEFEFE; }
+#content-main-nav .nav { margin-left: 216px; }
+#content-main-nav .nav li { float: left; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#content-main-nav .nav a { position: relative; display: block; height: 48px; line-height: 48px; padding: 0 10px; color: #333; font-size: 14px; font-weight: bold; box-sizing: border-box; text-align: center; min-width: 80px; }
+#content-main-nav .nav .current a { border-bottom-color: #FF148C; border-bottom-width: 4px; border-bottom-style: solid; }
+#content-main-nav .nav a:hover { text-decoration: none; border-bottom-color: #FF148C; border-bottom-width: 4px; border-bottom-style: solid; -webkit-transition: all 0.12s linear; transition: all 0.12s linear; }
+
+.game-tips-layout #main-content-wrap { float: right; width: 808px; }
+.game-tips-layout #layout-1 { float: left; }
+
+#main-content-wrap { float: left; width: 708px; }
+
+#layout-1 { float: right; width: 492px; }
+
+#layout-3 { float: left; width: 200px; }
+
+#layout-2 { position: relative; float: right; width: 300px; }
+
+.layout-double-col #layout-1 { width: 100%; }
+.layout-double-col #layout-3 { width: 300px; margin-right: -300px; }
+
+/*---------------------------------------------- ゲームプロフィール --------------------------------------------*/
+#game-short-prof { position: relative; float: left; width: 216px; height: 48px; overflow: hidden; }
+#game-short-prof .game-short-prof-inner { position: absolute; bottom: -48px; width: 100%; height: 48px; line-height: 48px; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#game-short-prof .game-short-prof-inner.move { bottom: 0; }
+#game-short-prof .game-icon { float: left; display: inline-block; margin: 4px 10px 0 0; }
+#game-short-prof .game-title { font-weight: bold; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+
+/*---------------------------------------------- 汎用 --------------------------------------------*/
+.game-icon { width: 40px; height: 40px; }
+.game-icon img { max-width: 100%; height: auto; vertical-align: baseline; }
+
+.thumb-wrap { position: relative; float: left; margin: 0 10px 0 0; }
+
+.thumb { width: 120px; height: 90px; border: 1px solid #EEE; background-repeat: no-repeat; -webkit-background-position: 50% 50%; background-position: 50% 50%; -webkit-background-size: cover; background-size: cover; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.title { font-size: 13px; line-height: 18px; }
+
+.more-content a { padding: 10px; display: block; font-weight: bold; font-size: 13px; }
+.more-content a:hover { text-decoration: none; background: #F8F8F8; }
+
+/*---------------------------------------------- ページTOPへ戻る --------------------------------------------*/
+#page-top-back { display: none; position: fixed; bottom: 20px; right: 20px; background-color: rgba(0, 0, 0, 0.45); color: #CCC; width: 56px; height: 56px; line-height: 56px; text-align: center; font-weight: bold; cursor: pointer; z-index: 9999; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#page-top-back span { border-top: 3px solid #CCC; }
+#page-top-back .fa { position: relative; top: 8px; font-size: 24px; }
+
+/*---------------------------------------------- フッター共通要素 --------------------------------------------*/
+#site-relation-link-list { text-align: center; }
+#site-relation-link-list li { position: relative; display: inline; margin-right: 12px; }
+#site-relation-link-list a { color: #333; font-size: 13spx; }
+
+#footer-game-title { padding-bottom: 20px; margin-bottom: 20px; }
+#footer-game-title dt { font-size: 16px; margin-bottom: 14px; }
+#footer-game-title li { float: left; width: 20%; -webkit-box-sizing: border-box; box-sizing: border-box; border: none; }
+#footer-game-title li a { display: block; overflow: hidden; padding: 10px 15px 10px 0; color: #333; }
+#footer-game-title li a:hover { text-decoration: none; background: #F8F8F8; }
+#footer-game-title .game-title { margin-top: 10px; font-size: 13px; font-weight: normal; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+#footer-game-title .game-icon { float: left; margin: 0 10px 0 0; }
+
+#copyright { padding: 16px 0 0; font-size: 13px; text-align: center; }
+
+/*----------------------------------------------  --------------------------------------------*/
+.module { margin-bottom: 16px; background: #FFF; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); }
+
+.main-module { min-height: 1000px; margin-bottom: 16px; }
+
+.side-module .sort-discription { padding: 5px 10px; color: #666; border-bottom: 1px solid #E5E5E5; }
+
+.section-header { background: #333; padding: 6px 10px; font-size: 16px; color: #FFF; font-weight: normal; }
+
+.side-menu-list h4 { background: #F2F2F2; font-size: 14px; padding: 5px 10px; }
+.side-menu-list h5 { font-size: 13px; padding: 10px 10px 0; }
+.side-menu-list > ul > li { position: relative; }
+.side-menu-list > ul > li:last-child { border: none; }
+.side-menu-list > ul > li > ul { padding: 5px 0; }
+.side-menu-list > ul > li > ul a { display: block; padding: 5px 10px; font-weight: bold; }
+.side-menu-list > ul > li > ul a:hover { background: #F8F8F8; text-decoration: none; }
+
+.list li { border-bottom: 1px solid #E5E5E5; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.list a { position: relative; overflow: hidden; display: block; padding: 10px; font-size: 13px; line-height: 16px; }
+.list a:hover { text-decoration: none; background: #F8F8F8; }
+.list .description { margin: 5px 0 0 0; font-size: 12px; line-height: 14px; color: #999; }
+
+.side-list .icon-rank-box { position: absolute; top: 50%; left: 10px; margin: -15px 0 0 0; }
+
+.panel-list li { float: left; width: 50%; border-right: 1px solid #E5E5E5; }
+.panel-list li:nth-child(odd) { border-right: none; }
+.panel-list .thumb-wrap { float: none; margin: 0; text-align: center; }
+.panel-list .thumb { display: inline-block; }
+.panel-list .title { height: 48px; overflow: hidden; }
+
+.video-list .thumb { width: 100px; height: 56px; }
+
+.new-list .thumb, .ranking-list .thumb { width: 80px; height: 60px; }
+.new-list .icon-rank-box, .ranking-list .icon-rank-box { position: absolute; top: 0; left: 0; }
+
+.side-ranking-list a { padding: 10px 10px 10px 50px; }
+
+.main-list a, .wiki-list a { padding: 10px 10px 10px 50px; }
+.main-list .icon-rank-box, .wiki-list .icon-rank-box { position: absolute; top: 50%; left: 10px; margin: -15px 0 0 0; }
+
+/*---------------------------------------------- ページャー --------------------------------------------*/
+.pager { text-align: center; padding: 20px 10px 10px; }
+.pager ul { display: inline-block; font-size: 14px; }
+.pager ul li { float: left; margin-left: 6px; }
+.pager ul li:first-child { margin-left: 0; }
+.pager ul .first { margin-right: 6px; }
+.pager .unit { display: block; background-color: #D6D6D6; text-decoration: none; color: #333; font-weight: bold; min-width: 40px; height: 40px; line-height: 38px; padding: 0 5px; font-size: 14px; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-sizing: border-box; box-sizing: border-box; cursor: pointer; }
+.pager .unit:hover { text-decoration: none; background-color: #FF148C; color: #FFF; }
+.pager .current .unit { background: #FF148C; color: #FFF; }
+.pager .current .unit:hover { background-color: #FF148C; color: #FFF; }
+.pager .ellipsis { display: block; height: 40px; line-height: 40px; text-align: center; color: #666; }
+.pager .prev, .pager .next { position: relative; display: block; width: 64px; line-height: 38px; font-size: 14px; font-weight: bold; background: #1b1b1b; color: #FFF; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.pager .prev:hover, .pager .next:hover { background: #2b2b2b; }
+.pager .prev { margin: 0 10px 0 0; }
+.pager .next { margin: 0 0 0 10px; }
+.pager .nodata { color: #CCC; }
+.pager .result { margin-top: 10px; color: #666; font-size: 12px; text-align: center; }
+
+/*---------------------------------------------- アイコン --------------------------------------------*/
+.icon-rank-box { width: 30px; height: 30px; line-height: 30px; text-align: center; background: #DBDBDB; color: #333; font-size: 16px; font-style: italic; font-weight: bold; -webkit-border-radius: 3px; border-radius: 3px; }
+
+.gold { background: #dcbb50; }
+
+.silver { background: #b5b5b5; }
+
+.bronze { background: #976B2F; }
+
+/*---------------------------------------------- パンくず --------------------------------------------*/
+#topic-path { padding: 10px; }
+#topic-path li { display: inline; }
+#topic-path .next { color: #999; padding: 0 5px; }
+
+/*---------------------------------------------- ゲームコピーライト --------------------------------------------*/
+#game-copy-right { margin-bottom: 16px; }
+#game-copy-right p { text-align: center; font-size: 13px; }
+
+/*---------------------------------------------- margin --------------------------------------------*/
+.m0 { margin: 0 !important; }
+
+.mr3 { margin-right: 4px !important; }
+
+.mr5 { margin-right: 5px !important; }
+
+.mr10 { margin-right: 10px !important; }
+
+.mr15 { margin-right: 15px !important; }
+
+.mr20 { margin-right: 20px !important; }
+
+.ml3 { margin-left: 3px !important; }
+
+.ml5 { margin-left: 5px !important; }
+
+.ml10 { margin-left: 10px !important; }
+
+.ml15 { margin-left: 15px !important; }
+
+.ml20 { margin-left: 20px !important; }
+
+.mt2 { margin-top: 2px !important; }
+
+.mt3 { margin-top: 3px !important; }
+
+.mt5 { margin-top: 6px !important; }
+
+.mt10 { margin-top: 10px !important; }
+
+.mt15 { margin-top: 15px !important; }
+
+.mt20 { margin-top: 20px !important; }
+
+.mt30 { margin-top: 30px !important; }
+
+.mt40 { margin-top: 40px !important; }
+
+.mt50 { margin-top: 50px !important; }
+
+.mt60 { margin-top: 60px !important; }
+
+.mb2 { margin-bottom: 2px !important; }
+
+.mb3 { margin-bottom: 3px !important; }
+
+.mb5 { margin-bottom: 6px !important; }
+
+.mb10 { margin-bottom: 10px !important; }
+
+.mb15 { margin-bottom: 15px !important; }
+
+.mb20 { margin-bottom: 20px !important; }
+
+.mb30 { margin-bottom: 30px !important; }
+
+.mb40 { margin-bottom: 40px !important; }
+
+.mb50 { margin-bottom: 50px !important; }
+
+.mb60 { margin-bottom: 60px !important; }
+
+/*---------------------------------------------- 固定 --------------------------------------------*/
+.fixed { position: fixed; top: 0; width: 100%; z-index: 9999; }
+
+/*---------------------------------------------- clearfix --------------------------------------------*/
+.cf { zoom: 1; }
+.cf:after { content: ''; display: block; clear: both; height: 0; }
+
+.click-able { -webkit-tap-highlight-color: rgba(0, 0, 0, 0.45); cursor: pointer; }
+
+/*---------------------------------------------- オーバーレイ --------------------------------------------*/
+#overlay { display: none; position: fixed; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.65); }
+
+/*---------------------------------------------- PC用 --------------------------------------------*/
+.pc-hide { display: none; }
+
+/*---------------------------------------------- ツイッター --------------------------------------------*/
+#twitter-wiget { margin-bottom: 16px; }
+
+@media only screen and (max-width: 768px) { .game-tips-layout #main-content-wrap, .game-tips-layout #layout-1, .game-tips-layout #layout-2, .game-tips-layout #layout-3 { float: none; width: 100%; }
+  .container, #main-content-wrap, #layout-1, #layout-2, #layout-3 { float: none; width: 100%; }
+  #content-header.front-page { height: 80px; }
+  #content-header.front-page .game-icon { width: 40px; height: 40px; left: 10px; bottom: 20px; -webkit-border-radius: 3px; border-radius: 3px; }
+  #content-header.front-page .game-title { left: 60px; bottom: 30px; padding: 0; font-size: 15px; }
+  #content-main-nav .nav { margin: 0; }
+  #content-main-nav .nav li { width: 33.3333%; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; }
+  #content-main-nav .nav a { font-size: 11px; height: 32px; line-height: 32px; }
+  #content-main-nav .nav a:hover { -webkit-transition: all 0 linear; transition: all 0 linear; }
+  #content-main-nav .nav .current a { border-bottom-width: 3px; }
+  #content-main-nav.sp-trans { overflow: hidden; }
+  #content-main-nav.sp-trans .inner { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  #content-main-nav.sp-trans .inner::-webkit-scrollbar { /* スクロールバー本体 */ width: 0; background: transparent; }
+  #content-main-nav.sp-trans .inner::-webkit-scrollbar:horizontal { /* 横方向のスクロールバー本体 */ width: 0; background: transparent; }
+  #content-main-nav.sp-trans .inner::-webkit-scrollbar-thumb, #content-main-nav.sp-trans .inner::-webkit-scrollbar-thumb:horizontal, #content-main-nav.sp-trans .inner::-webkit-scrollbar-track-piece:start, #content-main-nav.sp-trans .inner::-webkit-scrollbar-track-piece:end, #content-main-nav.sp-trans .inner::-webkit-scrollbar-corner { /* スクロールバー角 */ background: transparent; }
+  #content-main-nav.sp-trans .inner .nav { display: table; }
+  #content-main-nav.sp-trans .inner .nav li { float: none; display: table-cell; min-width: 100px; }
+  #content-main-nav.sp-trans .inner .nav li a { height: 44px; line-height: 44px; }
+  #content-main-nav.sp-trans .game-icon { position: relative; bottom: 3px; display: inline-block; width: 24px; height: 24px; margin: 0 5px 0 0; vertical-align: middle; }
+  #footer { padding: 20px 0 120px; }
+  #site-relation-link-list { padding: 0 10px; }
+  #footer-game-title dt { padding: 0 10px; }
+  #footer-game-title li { float: none; width: auto; border-bottom: 1px solid #E5E5E5; }
+  #footer-game-title li:first-child { border-top: 1px solid #E5E5E5; }
+  #footer-game-title li a { padding: 5px 10px; }
+  #footer-game-title .game-icon { width: 32px; height: 32px; }
+  #footer-game-title .game-title { margin: 8px 0 0 0; }
+  .side-menu-list > ul li { border-bottom: 1px solid #E5E5E5; }
+  .side-menu-list > ul li:first-child { border-top: 1px solid #E5E5E5; }
+  .side-menu-list > ul li:last-child { border-bottom: none; }
+  .side-menu-list > ul li > ul { padding: 0; }
+  /*---------------------------------------------- メニューへ --------------------------------------------*/
+  #menu-slide { display: none; position: fixed; bottom: 20px; left: 0; background-color: rgba(0, 0, 0, 0.45); color: #CCC; width: 44px; height: 44px; line-height: 44px; text-align: center; font-weight: bold; cursor: pointer; z-index: 9999; -webkit-border-radius: 0 3px 3px 0; border-radius: 0 3px 3px 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  #menu-slide span { border-top: 3px solid #CCC; }
+  #menu-slide .fa { position: relative; top: 8px; font-size: 24px; }
+  /*---------------------------------------------- ページTOPへ戻る --------------------------------------------*/
+  #page-top-back { right: 0; width: 44px; height: 44px; line-height: 44px; -webkit-border-radius: 3px 0 0 3px; border-radius: 3px 0 0 3px; }
+  #page-top-back .fa { top: 7px; font-size: 24px; }
+  .sp-hide { display: none !important; }
+  .sp-show { display: block !important; } }

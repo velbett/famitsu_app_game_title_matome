@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+@mixin prefix($properties, $val){
+	-webkit-#{$properties}: $val;
+	#{$properties}: $val;
+}
