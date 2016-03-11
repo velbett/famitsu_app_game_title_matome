@@ -24,10 +24,6 @@
 		width: 100%;
 	}
 
-	#header {
-		margin: 165px 0 0 0;
-	}
-
 	#common-header {
 		background: rgba(255,255,255,.5);
 	}
@@ -223,6 +219,7 @@
 		position: fixed;
 		z-index: 9999;
 		width: 100%;
+		display: none;
 		&.top {
 			top: 0;
 			img {
@@ -236,6 +233,51 @@
 				max-width: 100%;
 				height: auto;
 			}
+		}
+	}
+
+	/*----------------------------------------------
+	 * スライダー
+	 *--------------------------------------------*/
+	.slider-module {
+		background: none;
+		position: relative;
+		@include prefix(box-shadow, none);
+		.section-header {
+			background: none;
+			color: #333;
+			margin-bottom: 5px;
+		}
+		.more-content {
+			display: none;
+		}
+	}
+	.slide-list {
+		overflow: hidden;
+		@include prefix(box-shadow, none);
+		ul {
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+		}
+		li {
+			display: table-cell;
+			border: none;
+			a {
+				@include prefix(box-shadow, rgba(0,0,0,.08));
+				background: #FFF;
+				margin-right: 10px;
+			}
+		}
+		.thumb-wrap {
+			float: none;
+			margin: 0 0 3px 0;
+		}
+		.thumb {
+			width: 160px;
+			height: 120px;
+		}
+		.title {
+			line-height: 18px;
 		}
 	}
 }
